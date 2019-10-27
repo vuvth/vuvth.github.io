@@ -44,6 +44,7 @@ li {
 }
 
 #content {
+  color: blueviolet;
   height: 400px;
   clear: both;
   margin: 20px auto;
