@@ -1,8 +1,12 @@
+@import url(https://fonts.googleapis.com/css?family=Fira+Code);
+
+
 body {
-    background: #babab1;
+    background: #dce6e5;
     color: #000;
     margin: 60px;
-    font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif; 
+    font-family: 'Source Code Pro',Sans Serif;
+   
 }
 
 
