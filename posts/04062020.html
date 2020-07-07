@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-06-17 Wed 23:51 -->
+<!-- 2020-07-08 Wed 01:27 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Mysql notes</title>
@@ -245,7 +245,7 @@ for the JavaScript code in this tag.
 <div id="preamble" class="status">
 <nav>
     <ul>
-    <li><a href='/'>Home</a></li>
+    <li><a href='/'>Ume</a></li>
     <li><a href='/about/'>about</a></li>  
    </ul>
   </nav>
@@ -256,11 +256,11 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org3ccda02">1. Use mysqldump</a>
+<li><a href="#orga6d519c">1. Use mysqldump</a>
 <ul>
-<li><a href="#orge6dc5b1">1.1. Backup one database.</a></li>
-<li><a href="#org30b5174">1.2. Backup multiple database</a></li>
-<li><a href="#org59c0567">1.3. Backup all databases</a></li>
+<li><a href="#orge935348">1.1. Backup one database.</a></li>
+<li><a href="#org423c037">1.2. Backup multiple database</a></li>
+<li><a href="#orgdd6e09b">1.3. Backup all databases</a></li>
 </ul>
 </li>
 </ul>
@@ -268,12 +268,12 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-org3ccda02" class="outline-2">
-<h2 id="org3ccda02"><span class="section-number-2">1</span> Use mysqldump</h2>
+<div id="outline-container-orga6d519c" class="outline-2">
+<h2 id="orga6d519c"><span class="section-number-2">1</span> Use mysqldump</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-orge6dc5b1" class="outline-3">
-<h3 id="orge6dc5b1"><span class="section-number-3">1.1</span> Backup one database.</h3>
+<div id="outline-container-orge935348" class="outline-3">
+<h3 id="orge935348"><span class="section-number-3">1.1</span> Backup one database.</h3>
 <div class="outline-text-3" id="text-1-1">
 <div class="org-src-container">
 <pre class="src src-bash">mysqldump -u user -p mydatabase &gt; mydatabase.sql
@@ -283,8 +283,8 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-org30b5174" class="outline-3">
-<h3 id="org30b5174"><span class="section-number-3">1.2</span> Backup multiple database</h3>
+<div id="outline-container-org423c037" class="outline-3">
+<h3 id="org423c037"><span class="section-number-3">1.2</span> Backup multiple database</h3>
 <div class="outline-text-3" id="text-1-2">
 <div class="org-src-container">
 <pre class="src src-bash">mysqldump -u username -p --databases dbname1 dbname2 dbname3 &gt; mydatabase.sql
@@ -294,8 +294,8 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-org59c0567" class="outline-3">
-<h3 id="org59c0567"><span class="section-number-3">1.3</span> Backup all databases</h3>
+<div id="outline-container-orgdd6e09b" class="outline-3">
+<h3 id="orgdd6e09b"><span class="section-number-3">1.3</span> Backup all databases</h3>
 <div class="outline-text-3" id="text-1-3">
 <div class="org-src-container">
 <pre class="src src-bash">mysqldump -u username -p -&#8211;all-databases &gt; mydatabase.sql

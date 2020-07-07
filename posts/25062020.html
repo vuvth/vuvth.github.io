@@ -6,7 +6,7 @@
 <!-- 2020-07-08 Wed 01:27 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Can't sleep&#x2026;</title>
+<title>Note set -e</title>
 <meta name="generator" content="Org mode" />
 <meta name="author" content="Vu Vo Thanh" />
 <style type="text/css">
@@ -251,14 +251,81 @@ for the JavaScript code in this tag.
   </nav>
 </div>
 <div id="content">
-<h1 class="title">Can't sleep&#x2026;</h1>
+<h1 class="title">Note set -e</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgf9542f5">1. Set -e</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgf9542f5" class="outline-2">
+<h2 id="orgf9542f5"><span class="section-number-2">1</span> Set -e</h2>
+<div class="outline-text-2" id="text-1">
 <p>
-Em bước sang ngang đợi chờ một điều diệu kỳ như lúc ban đầu&#x2026;
+<b>set -e</b> trong script dùng để dừng script lại khi gặp được một câu lệnh thực thi có lỗi. 
 </p>
 
 <p>
-<iframe width="440" height="335" src="https://www.youtube.com/embed/z96SGB47Po4" frameborder="0" allowfullscreen></iframe>
+Ví dụ: 
 </p>
+
+<p>
+Trong trường hợp không có set -e. 
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash"><span class="org-comment-delimiter">#</span><span class="org-comment">!/bin/</span><span class="org-keyword">bash</span>
+
+<span class="org-builtin">echo</span> <span class="org-string">"before error!"</span>
+
+eeechooo <span class="org-string">"error statement!"</span>
+
+<span class="org-builtin">echo</span> <span class="org-string">"after error!"</span>
+</pre>
+</div>
+
+<p>
+Kết quả như sau.
+</p>
+
+
+<div class="figure">
+<p><img src="./no-set-e.png" alt="no-set-e.png" />
+</p>
+</div>
+
+<p>
+Ta thấy script thực hiện cả câu lệnh phía sau câu lệnh bị lỗi.
+</p>
+
+
+<pre class="example">
+#!/bin/bash
+set -e
+echo "before error!"
+
+eeechooo "error statement!"
+
+echo "after error!"
+</pre>
+
+
+
+<p>
+Với đoạn code này script dừng ngay khi gặp câu lệnh bị lỗi.
+</p>
+
+
+
+<div class="figure">
+<p><img src="./have-set-e.png" alt="have-set-e.png" />
+</p>
+</div>
+</div>
+</div>
 </div>
 <div id="postamble" class="status">
 <footer>
